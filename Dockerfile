@@ -1,5 +1,6 @@
 FROM armv7/armhf-ubuntu
 
+RUN uname -a
 RUN apt-get update
 RUN apt-get install -y ca-certificates nginx
 
