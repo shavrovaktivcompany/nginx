@@ -1,6 +1,6 @@
 FROM armv7/armhf-ubuntu
 
-RUN apt-get update && \
+RUN apt-get update --fix-missing && \
     apt-get install -y ca-certificates nginx && \
 	rm -rf /var/lib/apt/lists/*
 
