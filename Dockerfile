@@ -1,8 +1,9 @@
 FROM armv7/armhf-ubuntu
 
-RUN uname -a
-RUN apt-get update
-RUN apt-get install -y ca-certificates nginx
+RUN ["apt-get", "update"]
+RUN ["apt-get", "install", "-y", "nginx"]
+#RUN apt-get update
+#RUN apt-get install -y ca-certificates nginx
 
 #RUN apt-get update && apt-get update && apt-get install -y ca-certificates nginx && rm -rf /var/lib/apt/lists/*
 
