@@ -10,4 +10,4 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 VOLUME ["/etc/nginx/conf.d/", "/etc/nginx/certs", "/opt/static", "/opt/media"]
 EXPOSE 80 443
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx"]
